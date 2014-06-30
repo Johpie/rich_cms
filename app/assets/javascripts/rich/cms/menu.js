@@ -1,6 +1,6 @@
 Rich.Cms.Menu = (function() {
   var bind = function() {
-    $("#rich_cms_menu a.mark").bind("click", Rich.Cms.Editor.mark);
+    $(document).on("click", "#rich_cms_menu a.mark", Rich.Cms.Editor.mark)
   };
 
   var register = function() {

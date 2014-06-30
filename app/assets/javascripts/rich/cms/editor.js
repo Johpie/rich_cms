@@ -14,7 +14,7 @@ Rich.Cms.Editor = (function() {
       toggler.hide().closest(".keys").find("select[name=" + toggler.attr("data-name") + "]").show();
     });
 
-    $("#rich_cms_panel .edit a.close").bind("click", function(event) {
+    $(document).on("click", "#rich_cms_panel .edit a.close", function(event) {
       event.preventDefault();
       RaccoonTip.close();
     });
